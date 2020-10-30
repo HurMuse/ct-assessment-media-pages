@@ -1,1 +1,76 @@
+.header-1 {
+}
+header {
+  display: flex;
+
+  height: 300px;
+
+  width: 850px;
+  border: 10px solid purple;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: large;
+  font-weight: lighter;
+  background-color: green;
+  /*justify-content: center;*/
+}
+
+/*header::after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 80px;
+  padding-top: 30px;
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 10px;
+}
+
+nav a:hover {
+  color: indigo;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 10px;
+  background-color: indigo;
+  position: absolute;
+  top: 0;
+  width: 0%;
+}
+
+.pictureBox {
+  display: flex;
+  height: 50px;
+  margin: 5px;
+  width: 50px;
+  border: 1px solid #cad0d2;
+  border-radius: 10px;
+
+  background-color: black;
+}
 
